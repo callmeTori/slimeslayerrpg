@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.press-start-2P-regular {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.center {
+    text-align: center;
+}
+.border-10 {
+    border-radius: 10px;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+
+}
+.ui {
+    padding: 6px;
+}
+.stat {
+    padding: 10px;
+}
+body {
+    background-color: lavenderblush;
+}
+#game {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 400px;
+    background-color: #b72e36;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#screen {
+    position: relative;
+    background-color: lightgreen;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px inset;
+    height: 300px;
+    width: 320px;
+    margin: 12px auto;
+}
+#text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    margin: auto;
+    margin-top: 12px;
+    line-height: 20px;
+    font-size: 10px;
+}
+#mainStats {
+    position: absolute;
+    bottom: 0;
+}
+#hostileStats {
+    position: absolute;
+    bottom: 50px;
+    display: none;
+    background-color: lightcoral;
+    border-radius: 12px;
+}
+#controls {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    height: 300px;
+}
+#controls button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 12px;
+    padding: 12px;
+}
+/*
+#controls button:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border-radius: 2px solid #efefef;
+
+}
+#controls button:active {
+    cursor: pointer;
+    background-color: lightgreen;
+    color: black;
+    border-radius: 2px solid #efefef;
+
+}*/
+@media screen and (min-width: 320px) {
+    h1 {
+        font-size: 18px;
+    }
+    #text {
+        line-height: 24px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 45px;
+    }
+    #game {
+        margin: 0 auto;
+    }
+    #text {
+        line-height: 24px;
+    }
+}

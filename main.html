@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Slime Slayer RPG</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="press-start-2P-regular" >
+        <h1 class="ui center">Slime Slayer RPG</h1>
+        <div id="game">
+        <div class="border-10" id="screen">
+            <div class="ui" id="text">Welcome to the Jelly Slayer Task Force! Our forest is infested with slimes and we need your help to eradicate the source.<br>Here, take this dagger… You're gonna need it.</div>
+            <div class="ui flex-between" id="mainStats">
+                <span class="stat">PWR <strong><span id="playerXPText">0</span></strong></span>
+                <span class="stat">$ <strong><span id="playerCCText">50</span></strong></span>
+                <span class="stat"><span class="stat-icon">&#10084;</span><strong><span id="playerHPText">100</span></strong></span>
+            </div>
+
+            <div id="hostileStats">
+                <span class="stat"><strong><span id="hostileName"></span></strong></span>
+                <span class="stat">HP <strong><span id="hostileHealth"></span></strong>
+                    </span>
+                </div>
+            </div>
+
+        <div class="ui flex-between" id="controls">
+            <button class="press-start-2P-regular border-10" id="button1">start</button>
+            <button class="press-start-2P-regular border-10" id="button2">start</button>
+            <button class="press-start-2P-regular border-10" id="button3">start</button>
+            </div>
+        </div>
+    <script src="jellyscript.js"></script>
+</body>
+</html>
